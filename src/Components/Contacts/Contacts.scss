@@ -1,0 +1,392 @@
+$f:'Lato', sans-serif;
+
+.Contacts {
+  position: relative;
+  padding: 0;
+  background-color: #75B4AA;
+  margin: 0;
+  height: 100%;
+  background-image: url('../../img/bg5.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  &__header {
+    max-width: 1050px;
+    width: 100%;
+    font-family: $f;
+    text-align: center;
+    margin: 100px 0 60px 0;
+    h3{
+      color: white;
+      font-size: 60px;
+      font-weight: 300;
+      margin: 35px 0;
+    }
+    p {
+      color: #E6D1E3;
+      font-size: 14px;
+      margin: 0;
+    }
+  }
+  &__body {
+    margin: 0 auto;
+    max-width: 1100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    &__info {
+      max-width: 500px;
+      width: 100%;
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      .info__address{
+        margin: 0 0 0 5px;
+        h4 {
+          font-family: $f;
+          font-size: 30px;
+          color: white;
+          margin: 0;
+          font-weight: 300;
+        }
+        span {
+          display: block;
+          font-family: $f;
+          font-weight: 900;
+          color: #C0DFDA;
+          font-size: 20px;
+          margin: 27px 0 19px 0;
+        }
+        p {
+          font-family: $f;
+          font-size: 16px;
+          color: white;
+          margin: 0;
+        }
+        .under-text {
+          margin: 77px 0 0 0;
+          font-family: $f;
+          font-size: 16px;
+          color: white;
+          line-height: 20px;
+          a {
+            color: white;
+          }
+          span {
+            margin: 0;
+            display: inline;
+            font-size: 16px;
+            font-weight: normal;
+
+          }
+        }
+      }
+    }
+    &__ask {
+      max-width: 540px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      margin: 0 5px;
+      h4 {
+        font-family: $f;
+        font-size: 30px;
+        color: white;
+        margin: 0 0 26px 0;
+        font-weight: 300;
+      }
+      form {
+        width: 100%;
+        height: 300px;
+        .ask__header {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          input {
+            max-width: 260px;
+            width: 100%;
+            height: 40px;
+            background-color: #68A097;
+            box-sizing: border-box;
+            border-radius: 5px;
+            border: none;
+            outline: none;
+            font-family: $f;
+            color: #727272;
+            padding: 0 0 0 15px;
+          }
+          input::placeholder {
+            color: #82C8BD;
+          }
+          input:focus {
+            background-color: white;
+          }
+        }
+        .ask__body{
+          height: 160px;
+          width: 100%;
+          margin: 20px 0 30px 0;
+          textarea {
+            width: 100%;
+            height: 100%;
+            box-sizing: border-box;
+            background-color: #68A097;
+            border-radius: 5px;
+            border: none;
+            outline: none;
+            font-family: $f;
+            color: #727272;
+            padding: 15px;
+          }
+          textarea::placeholder {
+            color: #82C8BD;
+          }
+          textarea:focus {
+            background-color: white;
+          }
+        }
+        .ask__button {
+          margin: 0 auto;
+          width: 260px;
+          height: 50px;
+          button {
+            width: 100%;
+            height: 100%;
+            background-color: #DF5C64;
+            color: white;
+            border-radius: 5px;
+            border: none;
+            outline: none;
+            font-family: $f;
+            font-size: 26px;
+            font-weight: 800;
+            box-shadow: 0 1px 5px rgb(0, 0, 0, 0.6);
+          }
+          button:hover {
+            transform: scale(1.1);
+          }
+          button:focus {
+            border: 1px solid white;
+          }
+        }
+      }
+    }
+  }
+  &__footer{
+    background-color: #68A097;
+    position: absolute;
+    bottom: -150px;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    a{
+      width: 60px;
+      height: 60px;
+      display: flex;
+      background-color: #82C7BC;
+      border-radius: 50%;
+      justify-content: center;
+      align-items: center;
+      margin: 0 10px;
+      img{
+        width: 30px;
+        height: 20px;
+      }
+    }
+    a:hover {
+      transform: scale(1.2);
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .Contacts {
+    height: auto;
+    &__header {
+      h3{
+        font-size: 45px;
+      }
+      p {
+        margin: 0 2px;
+      }
+    }
+    &__body {
+      flex-direction: column;
+      align-items: center;
+      &__info {
+        max-width: 550px;
+        margin: 0 0 20px 0;
+      }
+      &__ask {
+        margin: 0 5px 20px 5px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .Contacts {
+    height: auto;
+    &__header {
+      margin: 100px 0 50px 0;
+    }
+    &__body {
+      margin: 0 auto;
+      max-width: 1100px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      &__info {
+        max-width: 550px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 0 20px 0;
+        .info__address{
+          max-width: 260px;
+          width: 100%;
+          margin: 0 5px 10px 5px;
+        }
+      }
+      &__ask {
+        max-width: 540px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin: 0 5px 20px 5px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 576px) {
+  .Contacts {
+    height: auto;
+    &__header {
+      margin: 70px 0 30px 0;
+      h3{
+        font-size: 36px;
+        margin: 30px 0 15px 0;
+      }
+    }
+    &__body {
+      margin: 0 auto;
+      max-width: 1100px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      &__info {
+        max-width: 550px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 0 20px 0;
+        .info__address{
+          max-width: 260px;
+          width: 100%;
+          margin: 0 5px 10px 5px;
+          h4 {
+            text-align: center;
+            font-family: $f;
+            font-size: 30px;
+            color: white;
+            margin: 0;
+            font-weight: 300;
+          }
+          span {
+            display: block;
+            font-family: $f;
+            font-weight: 900;
+            color: #C0DFDA;
+            font-size: 20px;
+            margin: 15px 0 10px 0;
+          }
+          p {
+            font-family: $f;
+            font-size: 16px;
+            color: white;
+            margin: 0;
+          }
+          .under-text {
+            margin: 30px 0 0 0;
+            font-family: $f;
+            font-size: 16px;
+            color: white;
+            line-height: 20px;
+            a {
+              color: white;
+            }
+            span {
+              margin: 0;
+              display: inline;
+              font-size: 16px;
+              font-weight: normal;
+  
+            }
+          }
+        }
+      }
+      &__ask {
+        max-width: 540px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin: 0 5px 20px 5px;
+        h4 {
+          text-align: center;
+          font-family: $f;
+          font-size: 30px;
+          color: white;
+          margin: 0 0 26px 0;
+          font-weight: 300;
+        }
+        form {
+          width: 100%;
+          height: auto;
+          .ask__header {
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+            input {
+              max-width: 300px;
+              width: 100%;
+              height: 40px;
+              margin: 5px 2px;
+            }
+          }
+          .ask__body{
+            height: 160px;
+            width: 100%;
+            margin: 10px 0 15px 0;
+            text-align: center;
+            textarea {
+              max-width: 300px;
+              margin: 0 2px;
+            }
+          }
+        }
+      }
+    }
+    &__footer{
+      bottom: -100px;
+      height: 100px;
+      
+    }
+  }
+}

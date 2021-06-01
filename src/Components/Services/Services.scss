@@ -82,3 +82,73 @@ $f:'Lato', sans-serif;
     }
   }
 }
+
+@media screen and (max-width: 992px) {
+  .Services {
+    &__header {
+      margin-top: 50px;
+      h3 {
+        font-size: 45px;
+      }
+      .bottom-text {
+        margin: 0 2px;
+      }
+      .top-text{
+        font-size: 16px;
+        margin: 10px 2px;
+      }
+  
+    }
+    &__cards {
+      &__item {
+        margin: 0 5px;
+        .item-header{
+          margin: 20px 0 40px 0;
+          font-size: 26px;
+        }
+
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .Services {
+    height: auto;
+    &__header {
+      margin: 100px 0 50px 0;
+      .bottom-text {
+        color: #FFCCCF;
+        font-size: 14px;
+        margin: 0 2px;
+      }
+    }
+    &__cards {
+      flex-wrap: wrap;
+      &__item {
+        margin: 10px 5px;
+        padding: 30px 0;
+      }
+    }
+  }
+}
+@media screen and (max-width: 576px) {
+  .Services {
+    &__header {
+      margin: 70px 0 30px 0;
+      h3 {
+        font-size: 36px;
+        font-weight: 300;
+        margin: 30px 0 15px 0; 
+      }
+    }
+    &__cards {
+      &__item {
+        margin: 10px 10px;
+        max-width: 320px;
+        .item-header{
+          margin: 20px 0 20px 0;
+        }
+      }
+    }
+  }
+}

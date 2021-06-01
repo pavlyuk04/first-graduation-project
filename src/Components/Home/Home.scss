@@ -15,26 +15,76 @@ $f:'Lato', sans-serif;
       max-width: 840px;
       width: 100%;
       background-color: rgb(255, 255, 255, 0.3);
-    .Home__slide__item{
-      display: flex;
-      align-items: center;
-      justify-content: space-around;
-      h3 {
-        max-width: 370px;
-        width: 100%;
-        color: #74C7D5;
-        font-size: 60px;
-        font-family: $f;
-        font-weight: 100;
-        text-align: right;
-        line-height: 50px;
+      .Home__slide__item{
+        display: inline-block;
+        text-align: center;
+        h3 {
+          max-width: 600px;
+          margin: 0 auto;
+          color: #74C7D5;
+          font-size: 60px;
+          font-family: $f;
+          font-weight: 100;
+          text-align: right;
+          line-height: 50px;
+        }
+        span {
+          margin: 0;
+          font-size: 129px;
+          font-weight: 900;
+          font-family: $f;
+          color: #74C7D5;
+        }
       }
-      span {
-        font-size: 129px;
-        font-weight: 900;
-        font-family: $f;
-        color: #74C7D5;
-      }
-    }
+    
   }
 } 
+@media screen and (max-width: 992px) {
+  .Home {
+    .Home__slide{
+        max-width: 550px;
+    }
+  } 
+}
+
+@media screen and (max-width: 600px) {
+  .Home {
+    position: relative;
+    background-image: url(../../img/bg1.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    .Home__slide{
+      margin: 130px 0 0 0;
+        max-width: 300px;
+        width: 100%;
+        background-color: rgb(255, 255, 255, 0.3);
+        .Home__slide__item{
+          display: inline-block;
+          text-align: center;
+          h3 {
+            max-width: 300px;
+            margin: 0 auto;
+            color: #74C7D5;
+            font-size: 50px;
+            font-family: $f;
+            font-weight: 100;
+            text-align: left;
+            line-height: 50px;
+          }
+          span {
+            margin: 0;
+            font-size: 100px;
+            font-weight: 900;
+            font-family: $f;
+            color: #74C7D5;
+          }
+        }
+      
+    }
+  } 
+}

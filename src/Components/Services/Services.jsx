@@ -7,12 +7,12 @@ import './Services.scss'
 const Services = () => {
   return (
     <div className='Services'>
-      <div className="Services__header">
+      <div className="Services__header animate__animated animate__fadeIn">
         <h3>OUR SERVICES</h3>
         <p className='top-text'> CRAS COMMODO MATTIS JUSTO NEC <span>LOBORTIS</span>. NAM UT TELLUS LOBORTIS, ULLAMCORPER MASSA SIT AMET</p>
         <p className='bottom-text'>Cras suscipit porttitor porttitor. Morbi sit amet tincidunt sapien. Curabitur posuere lectus aliquet erat rutrum sollicitudin. In enim diam, ullamcorper quis libero et, ultricies commodo est. Quisque at ante vitae justo fermentum viverra ac eu justo. Ut luctus imperdiet lacus, eget laoreet erat posuere quis.</p>
       </div>
-      <div className="Services__cards">
+      <div className="Services__cards  animate__animated animate__zoomIn">
         <div className="Services__cards__item">
           <div className="item-img">
             <img src={img1} alt="1" />

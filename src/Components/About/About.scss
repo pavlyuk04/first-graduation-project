@@ -1,0 +1,202 @@
+$f:'Lato', sans-serif;
+
+.About {
+  padding: 0;
+  background-color: #665464;
+  margin: 0;
+  height: 100%;
+  background-image: url('../../img/bg3.png');
+  background-size: 100% 140%;
+  background-repeat: no-repeat;
+  background-position: top;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  &__header {
+    max-width: 1050px;
+    width: 100%;
+    font-family: $f;
+    text-align: center;
+    margin: 100px 0 60px 0;
+    h3{
+      color: white;
+      font-size: 60px;
+      font-weight: 300;
+      margin: 35px 0;
+    }
+    p {
+      color: #E6D1E3;
+      font-size: 14px;
+      margin: 0 2px;
+    }
+  }
+  &__team {
+    text-align: center;
+    max-width: 1100px;
+    width: 100%;
+    &__baner {
+      position: relative;
+      max-width: 277px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0 auto 50px auto;
+      .baner-text {
+        position: relative;
+        z-index: 10;
+        width: 100%;
+        background-color: #A1CA6C;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: $f;
+        color: white;
+        font-size: 25px;
+        border-radius: 5px;
+      }
+      .baner-arrow {
+        top: -18px;
+        transform: rotate(45deg);
+        position: relative;
+        width: 30px;
+        height: 30px;
+        background-color: #A1CA6C;
+      }
+    }
+    &__cards {
+      display: flex;
+      max-width: 1100px;
+      width: 100%;
+      justify-content: space-around;
+      .cards__item {
+        background-color: rgb(77, 63, 75, 0.8);
+        max-width: 260px;
+        width: 100%;
+        padding: 50px 0 30px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &__img {
+          width: 155px;
+          height: 155px;
+          border-radius: 50%;
+          border: 5px solid #C7B6C5;
+          background-color: white;
+          display: flex;
+          align-items: flex-end;
+          img {
+            border-radius: 50%;
+          }
+        }
+        &__name {
+          font-family: $f;
+          color: #C7B6C5;
+          font-size: 25px;
+          margin: 0;
+          h4 {
+            margin: 30px 0 13px 0;
+          }
+          p {
+            color: #A1CA6C;
+            font-size: 14px;
+            margin: 0 0 35px 0;
+          }
+        }
+        &__social {
+          display: flex;
+          max-width: 180px;
+          width: 100%;
+          justify-content: space-around;
+          .social-item {
+            width: 32px;
+            height: 32px;
+            background-color: #A1859E;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+          .social-item:hover {
+            background-color: black;
+            transition: 0.7s;
+            transform: rotateX(360deg);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width:992px) {
+  .About {
+  height: auto;
+  &__header {
+    h3{
+      font-size: 45px;
+    }
+  }
+  &__team {
+    &__cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      .cards__item {
+        margin: 10px 50px;
+      }
+    }
+  }
+}
+}
+@media screen and (max-width:768px) {
+  .About {
+  &__header {
+    margin: 100px 0 50px 0;
+  }
+  &__team {
+    &__baner {
+      margin: 0 auto;
+    }
+    &__cards {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 1100px;
+      width: 100%;
+      justify-content: center;
+      .cards__item {
+        margin: 10px 10px;
+      }
+    }
+  }
+}
+}
+@media screen and (max-width:576px) {
+  .About {
+  &__header {
+    margin: 70px 0 30px 0;
+    h3{
+      font-size: 36px;
+      margin: 30px 0 15px 0;
+    }
+  }
+  &__team {
+    &__baner {
+      margin: 0 auto;
+    }
+    &__cards {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 1100px;
+      width: 100%;
+      justify-content: center;
+      .cards__item {
+        margin: 10px 10px;
+        max-width: 320px;
+        padding: 20px 0;
+      }
+    }
+  }
+}
+}
