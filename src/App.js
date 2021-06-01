@@ -17,7 +17,7 @@ function App() {
      <BrowserRouter>
         <div className="App">
           <Menu />
-          <Route path='/home' component={Home}/>
+          <Route exact path='/' component={Home}/>
           <Route path='/services' component={Services}/>
           <Route path='/about' component={About}/>
           <Route path='/work' component={Work}/>

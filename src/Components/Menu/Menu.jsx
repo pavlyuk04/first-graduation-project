@@ -22,7 +22,7 @@ const Menu =()=> {
     <nav className='Navbar'>
       <div className='Navbar__logo'>acnostia</div>
       <ul className='Navbar__menu' ref={refNav}>
-      <li className="Navbar__menu__item" onClick={MenuNav}><NavLink to='/home' activeClassName="nav-home">Home</NavLink></li>
+      <li className="Navbar__menu__item" onClick={MenuNav}><NavLink exact to='/' activeClassName="nav-home">Home</NavLink></li>
         <li className="Navbar__menu__item" onClick={MenuNav}><NavLink to='/services' activeClassName="nav-services">Services</NavLink></li>
         <li className="Navbar__menu__item" onClick={MenuNav}><NavLink to='/about' activeClassName="nav-about">About</NavLink></li>
         <li className="Navbar__menu__item" onClick={MenuNav}><NavLink to='/work' activeClassName="nav-work">Work</NavLink></li>
